@@ -14,6 +14,7 @@
 		9F6C38672B8105D900E0E4C1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C38662B8105D900E0E4C1 /* Persistence.swift */; };
 		9F6C386A2B8105D900E0E4C1 /* WWDC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C38682B8105D900E0E4C1 /* WWDC.xcdatamodeld */; };
 		9F6C388D2B8105FC00E0E4C1 /* use async await with urlsession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C388C2B8105FC00E0E4C1 /* use async await with urlsession.swift */; };
+		9F6C388F2B81088300E0E4C1 /* Meet async await in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C388E2B81088300E0E4C1 /* Meet async await in Swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9F6C386F2B8105D900E0E4C1 /* WWDCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6C38792B8105D900E0E4C1 /* WWDCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6C388C2B8105FC00E0E4C1 /* use async await with urlsession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "use async await with urlsession.swift"; sourceTree = "<group>"; };
+		9F6C388E2B81088300E0E4C1 /* Meet async await in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meet async await in Swift.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +94,14 @@
 		9F6C385C2B8105D900E0E4C1 /* WWDC */ = {
 			isa = PBXGroup;
 			children = (
+				9F6C388C2B8105FC00E0E4C1 /* use async await with urlsession.swift */,
+				9F6C388E2B81088300E0E4C1 /* Meet async await in Swift.swift */,
 				9F6C385D2B8105D900E0E4C1 /* WWDCApp.swift */,
 				9F6C385F2B8105D900E0E4C1 /* ContentView.swift */,
 				9F6C38612B8105D900E0E4C1 /* Assets.xcassets */,
 				9F6C38662B8105D900E0E4C1 /* Persistence.swift */,
 				9F6C38682B8105D900E0E4C1 /* WWDC.xcdatamodeld */,
 				9F6C38632B8105D900E0E4C1 /* Preview Content */,
-				9F6C388C2B8105FC00E0E4C1 /* use async await with urlsession.swift */,
 			);
 			path = WWDC;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				9F6C38672B8105D900E0E4C1 /* Persistence.swift in Sources */,
 				9F6C38602B8105D900E0E4C1 /* ContentView.swift in Sources */,
 				9F6C386A2B8105D900E0E4C1 /* WWDC.xcdatamodeld in Sources */,
+				9F6C388F2B81088300E0E4C1 /* Meet async await in Swift.swift in Sources */,
 				9F6C385E2B8105D900E0E4C1 /* WWDCApp.swift in Sources */,
 				9F6C388D2B8105FC00E0E4C1 /* use async await with urlsession.swift in Sources */,
 			);
