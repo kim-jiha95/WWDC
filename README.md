@@ -1,1 +1,1 @@
-# WEDC
+# WWDC Study
