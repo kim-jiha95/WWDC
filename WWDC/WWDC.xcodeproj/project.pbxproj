@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F5D572E2B82570000D5DB81 /* SwiftConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D572D2B82570000D5DB81 /* SwiftConcurrency.swift */; };
+		9F5D57302B82616400D5DB81 /* Behind the scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D572F2B82616400D5DB81 /* Behind the scene.swift */; };
 		9F6C385E2B8105D900E0E4C1 /* WWDCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C385D2B8105D900E0E4C1 /* WWDCApp.swift */; };
 		9F6C38602B8105D900E0E4C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C385F2B8105D900E0E4C1 /* ContentView.swift */; };
 		9F6C38622B8105D900E0E4C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6C38612B8105D900E0E4C1 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		9F5D572D2B82570000D5DB81 /* SwiftConcurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrency.swift; sourceTree = "<group>"; };
+		9F5D572F2B82616400D5DB81 /* Behind the scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Behind the scene.swift"; sourceTree = "<group>"; };
 		9F6C385A2B8105D900E0E4C1 /* WWDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6C385D2B8105D900E0E4C1 /* WWDCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDCApp.swift; sourceTree = "<group>"; };
 		9F6C385F2B8105D900E0E4C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		9F6C385C2B8105D900E0E4C1 /* WWDC */ = {
 			isa = PBXGroup;
 			children = (
+				9F5D572F2B82616400D5DB81 /* Behind the scene.swift */,
 				9F5D572D2B82570000D5DB81 /* SwiftConcurrency.swift */,
 				9F6C388C2B8105FC00E0E4C1 /* use async await with urlsession.swift */,
 				9F6C388E2B81088300E0E4C1 /* Meet async await in Swift.swift */,
@@ -249,6 +252,7 @@
 			files = (
 				9F5D572E2B82570000D5DB81 /* SwiftConcurrency.swift in Sources */,
 				9F6C38672B8105D900E0E4C1 /* Persistence.swift in Sources */,
+				9F5D57302B82616400D5DB81 /* Behind the scene.swift in Sources */,
 				9F6C38602B8105D900E0E4C1 /* ContentView.swift in Sources */,
 				9F6C386A2B8105D900E0E4C1 /* WWDC.xcdatamodeld in Sources */,
 				9F6C388F2B81088300E0E4C1 /* Meet async await in Swift.swift in Sources */,
