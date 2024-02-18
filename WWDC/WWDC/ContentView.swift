@@ -43,6 +43,7 @@ struct ContentView: View {
     }
 
     private func addItem() {
+        main()
         withAnimation {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
