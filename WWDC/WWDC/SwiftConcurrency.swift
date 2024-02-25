@@ -20,7 +20,7 @@ func gcdExample() {
     DispatchQueue.concurrentPerform(iterations: 10) { _ in
         incrementSharedValue()
     }
-    
+    // 작업 동시 실행
     print("Shared Value after concurrentPerform: \(sharedValue)")
 }
 
@@ -32,7 +32,7 @@ func gcdAsyncExample() {
             incrementSharedValue()
         }
     }
-
+    //작업 비옹기 진행, 이전 작업 완료 후 진행
     dispatchGroup.notify(queue: .main) {
         print("Shared Value after async: \(sharedValue)")
     }
@@ -45,21 +45,23 @@ func gcdAndAsyncExample() {
 
 func performTask(taskNumber: Int) async {
     print("Task \(taskNumber) started")
-    sleep(1)
+    try? await Task.sleep(for: .seconds(1))
     print("Task \(taskNumber) finished")
 }
 
 //Swift Concurrency
 func swiftConcurrencyExample() {
+    // new structed concurrency, context = async
     Task {
-        let task1 = Task {
-            await performTask(taskNumber: 1)
+        // todo: task1,2 동시에 실행하려면 taskgroup ? async-let?
+        let array1:[Int] = [1,2,3,4,5]
+        await withThrowingTaskGroup(of: Void.self) { group in
+            group.addTask {
+                for i in array1 {
+                    await performTask(taskNumber: i)
+                }
+            }
         }
-        let task2 = Task {
-            await performTask(taskNumber: 2)
-        }
-        await task1.get()
-        await task2.get()
     }
 }
 
@@ -76,7 +78,7 @@ func threadExplosionExample() {
 
 func threadExplosionSolution() {
     let queue = OperationQueue()
-    queue.maxConcurrentOperationCount = 10
+    queue.maxConcurrentOperationCount = 10 // 동시 실행 작업 수 제한
 
     for i in 0..<100000 {
         queue.addOperation {
@@ -116,7 +118,7 @@ func priorityInversionSolution() {
     let serialQueue = DispatchQueue(label: "com.example.serialQueue")
     let highPriorityQueue = DispatchQueue.global(qos: .userInteractive)
     let lowPriorityQueue = DispatchQueue.global(qos: .utility)
-    let semaphore = DispatchSemaphore(value: 0)
+    let semaphore = DispatchSemaphore(value: 0) // semaphore로 우선순위 역전 해결
 
     serialQueue.async {
         semaphore.wait()

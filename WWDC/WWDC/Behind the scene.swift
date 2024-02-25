@@ -92,7 +92,7 @@ func getFeed() async {
     await withThrowingTaskGroup(of: [Article].self) { group in
         for feed in feedsToUpdate {
             // 2. `TaskGroup`에서 Child task를 사용하여 각각의 feed가 update되어야 함을 명시한다.
-            group.async {
+            group.addTask {
                 // 3. feed의 url을 기반으로 네트워크 요청한다.
                 let (data, response) = try await URLSession.shared.data(from: feed.url)
                 // 4. 결과를 deserialize한다.
