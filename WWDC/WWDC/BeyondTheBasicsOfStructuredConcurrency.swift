@@ -111,3 +111,22 @@ func cookSoup() async {
     }
     await kitchen.logStatus()
 }
+
+//task group
+func chopIngredients(_ ingredients: [any Ingredient]) async -> [any ChoppedIngredient] {
+    return await withTaskGroup(of: (ChoppedIngredient?).self,
+                               returning: [any ChoppedIngredient].self) { group in
+         // 재료들을 동시에 썹니다
+         for ingredient in ingredients {
+             group.addTask { await chop(ingredient) }
+         }
+         // 썬 야채들을 모읍니다
+         var choppedIngredients: [any ChoppedIngredient] = []
+         for await choppedIngredient in group {
+             if choppedIngredient != nil {
+                choppedIngredients.append(choppedIngredient!)
+             }
+         }
+         return choppedIngredients
+    }
+}
