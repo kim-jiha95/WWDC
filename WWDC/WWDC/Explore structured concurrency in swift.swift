@@ -91,6 +91,20 @@ func fetchThumbnailsGroup(for ids: [String]) async throws -> [String: UIImage] {
   return thumbnails
 }
 
+// a task group is for concurrency with dynamic width
+func fetchThumnails(for ids: [String]) async throws -> [String: UIImage] {
+    var thumnails: [String:UIImage] = [:]
+    try await withThrowingTaskGroup(of: Void.self) {group in
+        for id in ids {
+            group.addTask{
+                // data race
+//                thumnails[id] = try await fetchOneThumbnail(withID: id)
+            }
+        }
+    }
+    return thumnails
+}
+
 // unstructured task
 //@MainActor
 //class MyDelegate: UICollectionViewDelegate {

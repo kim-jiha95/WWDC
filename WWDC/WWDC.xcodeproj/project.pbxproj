@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F4289112C22DCAB001F26E3 /* PoP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4289102C22DCAB001F26E3 /* PoP.swift */; };
 		9F5D572E2B82570000D5DB81 /* SwiftConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D572D2B82570000D5DB81 /* SwiftConcurrency.swift */; };
 		9F5D57302B82616400D5DB81 /* Behind the scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D572F2B82616400D5DB81 /* Behind the scene.swift */; };
 		9F5D57322B826B7100D5DB81 /* Explore structured concurrency in swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D57312B826B7100D5DB81 /* Explore structured concurrency in swift.swift */; };
@@ -18,6 +19,7 @@
 		9F6C386A2B8105D900E0E4C1 /* WWDC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C38682B8105D900E0E4C1 /* WWDC.xcdatamodeld */; };
 		9F6C388D2B8105FC00E0E4C1 /* use async await with urlsession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C388C2B8105FC00E0E4C1 /* use async await with urlsession.swift */; };
 		9F6C388F2B81088300E0E4C1 /* Meet async await in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C388E2B81088300E0E4C1 /* Meet async await in Swift.swift */; };
+		9F98B31D2B8CB33B006404E4 /* live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F98B31C2B8CB33B006404E4 /* live.swift */; };
 		9FC207DA2B8B97BA00ED70C5 /* BeyondTheBasicsOfStructuredConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC207D92B8B97BA00ED70C5 /* BeyondTheBasicsOfStructuredConcurrency.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F4289102C22DCAB001F26E3 /* PoP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoP.swift; sourceTree = "<group>"; };
 		9F5D572D2B82570000D5DB81 /* SwiftConcurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrency.swift; sourceTree = "<group>"; };
 		9F5D572F2B82616400D5DB81 /* Behind the scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Behind the scene.swift"; sourceTree = "<group>"; };
 		9F5D57312B826B7100D5DB81 /* Explore structured concurrency in swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Explore structured concurrency in swift.swift"; sourceTree = "<group>"; };
@@ -53,6 +56,8 @@
 		9F6C38792B8105D900E0E4C1 /* WWDCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6C388C2B8105FC00E0E4C1 /* use async await with urlsession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "use async await with urlsession.swift"; sourceTree = "<group>"; };
 		9F6C388E2B81088300E0E4C1 /* Meet async await in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meet async await in Swift.swift"; sourceTree = "<group>"; };
+		9F98B31C2B8CB33B006404E4 /* live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = live.swift; sourceTree = "<group>"; };
+		9F98B31E2B8CBE79006404E4 /* live2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = live2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9FC207D92B8B97BA00ED70C5 /* BeyondTheBasicsOfStructuredConcurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheBasicsOfStructuredConcurrency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +107,8 @@
 		9F6C385C2B8105D900E0E4C1 /* WWDC */ = {
 			isa = PBXGroup;
 			children = (
+				9F98B31C2B8CB33B006404E4 /* live.swift */,
+				9F4289102C22DCAB001F26E3 /* PoP.swift */,
 				9FC207D92B8B97BA00ED70C5 /* BeyondTheBasicsOfStructuredConcurrency.swift */,
 				9F5D57312B826B7100D5DB81 /* Explore structured concurrency in swift.swift */,
 				9F5D572F2B82616400D5DB81 /* Behind the scene.swift */,
@@ -114,6 +121,7 @@
 				9F6C38662B8105D900E0E4C1 /* Persistence.swift */,
 				9F6C38682B8105D900E0E4C1 /* WWDC.xcdatamodeld */,
 				9F6C38632B8105D900E0E4C1 /* Preview Content */,
+				9F98B31E2B8CBE79006404E4 /* live2.playground */,
 			);
 			path = WWDC;
 			sourceTree = "<group>";
@@ -258,6 +266,8 @@
 			files = (
 				9F5D572E2B82570000D5DB81 /* SwiftConcurrency.swift in Sources */,
 				9F5D57322B826B7100D5DB81 /* Explore structured concurrency in swift.swift in Sources */,
+				9F98B31D2B8CB33B006404E4 /* live.swift in Sources */,
+				9F4289112C22DCAB001F26E3 /* PoP.swift in Sources */,
 				9F6C38672B8105D900E0E4C1 /* Persistence.swift in Sources */,
 				9F5D57302B82616400D5DB81 /* Behind the scene.swift in Sources */,
 				9F6C38602B8105D900E0E4C1 /* ContentView.swift in Sources */,
